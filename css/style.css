@@ -1,0 +1,136 @@
+body{
+	background-color:#16afbb;
+	color:#ffffff;
+	font-family:arial;
+}
+
+#wrap{
+	background-color:#16afbb;
+	color:#ffffff;
+	margin: 0px auto;
+	font-family:arial;
+	width:960px;
+	display:block;
+	
+}
+
+header{
+	height:150px;
+	display:block;
+}
+
+#logo{
+	float:left;
+}
+
+#bookappointment{
+	float:right;
+}
+
+#righthead{
+	width: 480px;
+	padding: 25px;
+	float:right;
+}
+
+#topline{
+	float:left;
+	display:block;
+}
+
+ul#headernav li a{
+	text-decoration: none;
+	margin: 0 40px 0 35px;
+	float:left;
+	font-family:arial;
+	font-size:12px;
+	color:#ffffff;
+}
+
+/*HOMPAGE STYLES*/
+
+#homepage{
+	display:block;
+}
+
+.homenav img{
+	padding:10px;
+	float:left;
+}
+
+/*CONTACT PAGE STYLES*/
+
+#contactpage{
+	height: 500px;
+}
+
+h1{
+	font-size:25px;
+	text-decoration:bold;
+}
+
+.nailpolish{
+	float:left;
+}
+
+#contactinfo{
+	float: left;
+	line-height: 40px;
+}
+
+/*ABOUT PAGE STYLES*/
+
+#about{
+	float: left;
+	line-height: 40px;
+	width:50%;
+	height:465px;
+}
+
+.nailpolish{
+	height:465px;
+	width:50%;
+	float:left;
+}
+
+
+/*SANITATION PRACTICES*/
+
+#sanitation{
+	height:465px;
+	line-height:30px;
+}
+
+/*FOOTER STYLES*/
+footer{
+	margin: 0 auto;
+	width: 960px;
+}
+footer #social img{
+	float:left;
+}
+
+footer #line{
+	float:left;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+footer #contactfooter li{
+	float: left;
+	padding-left: 10px;
+	padding-top:5px;
+	font-size: 13px;
+}
+
+footer #contactfoot{
+	height: 20px;
+	padding-left: 25px;
+	float: left;
+	padding-right: 10px;
+}
+
+
+.clear{
+	clear: both;
+}
