@@ -1,39 +1,42 @@
-<html ng-app>
+<html ng-app="myApp">
 <head>
+	<base href="/">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>The Salon at Whole Body</title>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="icon" href="images/favicon.png" type="image/png"/>
-	<script type="text/javascript" src="angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script type="text/javascript" src="angular-route.js"></script>
 	<script type="text/javascript" src="app.js"></script>
+	<meta property="og:title" content="Full Body Salon" />
+	<meta property="og:image" content="images/websiteshot.png" />
 </head>
 
 <body>
 	<div id="wrap">
 		<header>
 			<div id="lefthead">
-				<a href="home.html"><img id="logo" src="images/logo.png"/></a>
+				<a href="/home/"><img id="logo" src="images/logo.png"/></a>
 			</div>
 			<div id="righthead">
 				<a href="http://www.secure-booker.com/wholefoods/MakeAppointment/Search.aspx/"><img id="bookappointment" src="images/bookappointment.png"/></a>
 				<img class="topline" src="images/topline.png"/>
 				<div id="headnav">	
 					<ul id="headernav">
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
-						<li><a href="sanitation.html">SANITATION PRACTICES</a></li>
+						<li><a href="views/about.html">ABOUT</a></li>
+						<li><a href="views/contact.html">CONTACT</a></li>
+						<li><a href="views/sanitation.html">SANITATION PRACTICES</a></li>
 					</ul>
 				</div>
 				<img class="topline" src="images/topline.png"/>
 			</div>
 		</header>
-		<div ng-view>
-			
-		</div>
-	</div>
 
+		<!-- ANGULAR -->
+		<ng-view></ng-view>
+		<!-- END ANGULAR -->
 		<footer>
 			<img id="line" src="images/line.png"/>
 			<div id="contactfoot">
@@ -55,21 +58,8 @@
 		</footer>
 
 
-		<script type="text/javascript" charset="utf-8">
+	</div>
 
-		$(function(){
-			
-			 $("#logo").on("pageload",function(){
-			
-			 	$("#homepage").show();
-				
-			 	return false;
-			
-			 });
-			 
-			 sc
-
-		</script>
-	</body>
+</body>
 </html>
 

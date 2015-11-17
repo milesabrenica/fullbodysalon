@@ -1,26 +1,32 @@
-var mainApp = angular.module()
 
-mainApp.config(){
-    .when('/', {
-        templateUrl : 'home.html',
-    })
+var myApp = angular.module('myApp', ['ngView', 'routeProvider', 'locationProvider']);
 
-    // route for the about page
-    .when('/about', {
-        templateUrl : 'about.html',
-    })
+myApp.config(['routeProvider', 'locationProvider', 
+    function($routeProvider, $locationProvider){
+    $routeProvider
+        .when('/', {
+            templateUrl: '/views/home.html'
+        })
+        // route for the about page
+        .when('about', 
+        {
+            templateUrl: 'views/about.html',
+        })
+        // route for the sanitation page
+        .when('/sanitation', 
+        {
+            templateUrl: 'views/sanitation.html',
+        })
+        // route for the contact page
+        .when('/contact', 
+        {
+            templateUrl: 'views/contact.html',
+        })
 
-    // route for the sanitation page
-    .when('/sanitation', {
-        templateUrl : 'sanitation.html',
-    })
+        .otherwise({
+            redirectTo: '/views/home.html',
+        });
 
-    // route for the contact page
-    .when('/contact', {
-        templateUrl : 'contact.html',
-    });
-});
-
-
-}
-    
+        $locationProvider.html5Mode(true);
+        $locationProvider.hashPrefix('!');
+}]);
